@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    background-color: #0b0c10;
+
+}
+
+article {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+.topnav {
+    padding-left: 20px;
+    padding-bottom: 6px;
+}
+
+.topnav a {
+    font-size: 40px;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F7F7FF;
+    margin-right: 80px;
+}
+
+.topnav a:hover {
+    color: #66fcf1;
+}
+
+.topnav li {
+    display: inline-block;
+}
+
+.topnav ul {
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #F7F7FF;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: left;
+    color: #66fcf1;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #F7F7FF;
+}
+
+.subheading {
+    margin-bottom: 30px;
+    color: #F7F7FF;
+}
+
+img {
+    margin: 40px 0;
+    border: 3px double #F7F7FF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+.links a {
+    font-size: 13.33px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+    background-color: #0b0c10;
+    text-decoration: none;
+    color: #66fcf1;
+    margin-right: 20px;
+    color: #F7F7FF;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px #66fcf1 solid;
+}
+
+.links a:hover {
+    box-shadow: 0 2px 6px #66fcf1;
+    transform: translateY(-4px);
+    color: #66fcf1;
+    border: #F7F7FF 2px solid;
+}
+
+.links a:last-child {
+    margin-right: 0px;
+}
