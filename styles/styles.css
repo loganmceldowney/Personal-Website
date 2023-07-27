@@ -917,6 +917,7 @@ footer p {
 @media (max-width: 900px) {
 
 
+
     .skill-box {
         width: 300px;
     }
@@ -945,8 +946,10 @@ footer p {
 }
 
 @media (max-width: 700px) {
+
     .project-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
     }
 
     .page4,
@@ -957,6 +960,10 @@ footer p {
 }
 
 @media (max-width: 600px) {
+
+    .home-nav {
+        display: none;
+    }
 
     h1 {
         font-size: 46px;
@@ -997,7 +1004,7 @@ footer p {
     .page4,
     .page4-part2,
     .page4-part3 {
-        height: 200vh;
+        height: 250vh;
     }
 
     .personal-website {
