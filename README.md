@@ -1,7 +1,7 @@
 # **Personal Website**
 This website was created in order to showcase my skills as a web developer. I created this in order to become more comfortable with HTML and CSS, while also providing a way for employers to see my work.
 
-![Alt text](https://loganmceldowney-website.netlify.app/img/personal-website.png)
+![Alt text](https://loganmceldowney.dev//img/personal-website-full.png)
 
 ## **Project Purpose & Goal**
 The purpose of creating this project was to demonstrate my skills as a web developer. I did this by creating my own personal website that could walk potential employers through my **skills** and **abilities** in a more interactive way. This being one of my first actual websites, my main goal was to become more comfortable with HTML and CSS. In addition to this, I was able to learn a lot more about these technologies and be able to showcase my potential to employers.
