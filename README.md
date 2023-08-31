@@ -1,4 +1,4 @@
-# **Personal Website**
+# **Personal Website V2**
 This website was created in order to showcase my skills as a web developer. I created this in order to become more comfortable with HTML and CSS, while also providing a way for employers to see my work.
 
 ![Alt text](https://loganmceldowney.dev//img/personal-website-full.png)
