@@ -211,3 +211,7 @@ hr {
 .is-hidden {
   display: none;
 }
+
+.portfolio-img-phone {
+  display: none;
+}
