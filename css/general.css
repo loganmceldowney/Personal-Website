@@ -54,9 +54,6 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  position: relative;
-}
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
   line-height: 1;
