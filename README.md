@@ -20,3 +20,7 @@ As far as the overall design of this website, I mainly wanted to include **5 dif
 * Writing semantic markup
 * CSS Grid & Flexbox
 * Basic Javascript
+* Responsive Design
+* Carousel Component
+* Sticky Navigation Bar
+* Mobile Navigation
