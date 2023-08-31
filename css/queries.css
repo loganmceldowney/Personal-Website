@@ -113,8 +113,7 @@
   .section-hero,
   .section-about,
   .section-cta,
-  .section-contact,
-  .section-footer {
+  .section-contact {
     padding: 12.8rem 3.6rem;
   }
 
@@ -132,6 +131,14 @@
   .portfolio-img {
     width: 75%;
     margin: 0 auto;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
   }
 }
 
