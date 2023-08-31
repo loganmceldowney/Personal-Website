@@ -6,6 +6,7 @@
     <title>Logan McEldowney - Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,7 +15,7 @@
   <body>
     <main>
       <section class="section-hero" id="home">
-        <a href=""><img class="logo" src="img/Logo-2.png" alt="" /></a>
+        <a href="#home"><img class="logo" src="img/Logo-2.png" alt="Logo" /></a>
         <div class="hero">
           <div class="hero-text-box">
             <h2 class="heading-secondary">&mdash; Hello</h2>
@@ -42,9 +43,13 @@
       <section class="section-about" id="about">
         <div class="container grid-2-cols center">
           <div>
-            <img class="personal-image" src="img/personal-image.jpg" alt="" />
+            <img
+              class="personal-image"
+              src="img/personal-image.jpg"
+              alt="Image of Logan McEldowney & his girlfriend"
+            />
           </div>
-          <div>
+          <div class="about-text-box">
             <h2 class="heading-secondary">About Me</h2>
             <p class="subheading">I am a Frontend Developer</p>
             <p class="about-description">
@@ -115,7 +120,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="social">
         <div class="container">
           <h2 class="heading-secondary center-heading heading-color">
             Socials
@@ -161,7 +166,7 @@
                     <img
                       class="portfolio-img"
                       src="img/forkify-laptop.png"
-                      alt=""
+                      alt="Forkify website laptop mockup image"
                     />
                   </div>
                   <div class="portfolio-text-box">
@@ -190,7 +195,7 @@
                     <img
                       class="portfolio-img"
                       src="img/bankist-laptop.png"
-                      alt=""
+                      alt="Bankist website laptop mockup image"
                     />
                   </div>
                   <div class="portfolio-text-box">
@@ -218,7 +223,7 @@
                     <img
                       class="portfolio-img"
                       src="img/mapty-laptop.png"
-                      alt=""
+                      alt="Mapty website laptop mockup image"
                     />
                   </div>
                   <div class="portfolio-text-box">
@@ -246,7 +251,7 @@
                     <img
                       class="portfolio-img"
                       src="img/omni-food-laptop.png"
-                      alt=""
+                      alt="Omnifood website laptop mockup image"
                     />
                   </div>
                   <div class="portfolio-text-box">
@@ -375,13 +380,39 @@
       </section>
 
       <section class="section-footer">
-        <div class="container-small">
+        <div class="container-small center">
           <nav class="footer-nav">
             <ul class="footer-nav-list">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#social">Socials</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-social-nav">
+            <ul class="footer-social-list">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/logan-m-b3774a140/"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/logan.mceldowney.3"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/loganmceldowney?tab=repositories"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </li>
             </ul>
           </nav>
           <p class="copyright">
@@ -403,6 +434,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"></script>
     <script async src="/scripts/script.js"></script>
     <script async src="/scripts/carousel.js"></script>
-    <script async src="/scripts/modal.js"></script>
   </body>
 </html>
