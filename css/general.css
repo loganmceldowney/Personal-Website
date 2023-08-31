@@ -62,6 +62,21 @@ body {
   overflow-x: hidden;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #000 20%, #040e0b);
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
+  /* border-bottom: 1px solid #f1f3f5; */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo2 {
+  display: none;
+}
 .heading-primary {
   margin-bottom: 2.4rem;
   font-size: 8.6rem;

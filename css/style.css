@@ -1,22 +1,12 @@
 /* ********************************************** */
 /* NAVIGATION */
 /* ********************************************** */
-.main-nav {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 4.8rem 0rem;
-}
 
 .main-nav-list {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   gap: 3.2rem;
   list-style: none;
-  padding: 1.2rem 6.4rem;
-  flex-direction: column;
 }
 
 .main-nav-list a:link,
@@ -40,6 +30,46 @@
   color: #212529;
 }
 
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #f1f3f5;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none;
+  background-color: rgba(7, 8, 8, 0.97);
+  /* background-color: rgba(255, 255, 255, 0.97); */
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /* ********************************************** */
 /* HERO SECTION */
 /* ********************************************** */
@@ -48,7 +78,7 @@
   position: relative;
   background: linear-gradient(135deg, #000 20%, #061611);
   padding: 4.8rem 0 9.6rem 0;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,9 +142,6 @@
 }
 
 .logo {
-  position: absolute;
-  top: 4.8rem;
-  right: 9.6rem;
   width: 5.2rem;
   height: 5.2rem;
 }

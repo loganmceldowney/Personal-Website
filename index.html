@@ -14,8 +14,22 @@
   </head>
   <body>
     <main>
-      <section class="section-hero" id="home">
+      <header class="header">
         <a href="#home"><img class="logo" src="img/Logo-2.png" alt="Logo" /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#home">Home</a></li>
+            <li><a class="main-nav-link" href="#about">About</a></li>
+            <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="main-nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <section class="section-hero" id="home">
         <div class="hero">
           <div class="hero-text-box">
             <h2 class="heading-secondary">&mdash; Hello</h2>
@@ -30,14 +44,6 @@
             >
           </div>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </section>
 
       <section class="section-about" id="about">
