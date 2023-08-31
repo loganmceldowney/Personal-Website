@@ -26,6 +26,10 @@
   .section-portfolio {
     height: 75vh;
   }
+
+  .subheading {
+    font-size: 6rem;
+  }
 }
 
 /*************************/
@@ -42,7 +46,7 @@
   }
 
   .personal-image {
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
   }
 

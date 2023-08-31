@@ -85,20 +85,17 @@
 }
 
 .hero {
-  justify-content: center;
   max-width: 130rem;
-  margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
-  gap: 0;
 }
 
 .hero-text-box {
   position: relative;
   padding: 2.4rem 3.6rem 0 0;
 }
+
 .hero-text-box::after {
   content: "";
   position: absolute;
@@ -152,8 +149,6 @@
 .section-about {
   background: linear-gradient(45deg, #000 20%, #061611);
   padding: 12.8rem 0;
-  align-items: center;
-  justify-content: center;
 }
 
 .about-description {
@@ -186,7 +181,6 @@
 }
 
 .skill-name {
-  display: inline-block;
   color: #bbb;
   font-size: 1.6rem;
   letter-spacing: 1px;
@@ -202,8 +196,6 @@
 .section-cta {
   background-color: #2dae87;
   padding: 9.6rem 0;
-  align-items: center;
-  justify-content: center;
 }
 
 .subheading-cta {
@@ -285,7 +277,7 @@
   font-size: 1.8rem;
   letter-spacing: 0.8px;
   line-height: 1.6;
-  color: #adb5bd;
+  color: #bbb;
   margin-bottom: 3.2rem;
 }
 
@@ -325,7 +317,8 @@
   list-style: none;
 }
 
-.portfolio-link {
+.portfolio-link:link,
+.portfolio-link:visited {
   text-align: center;
   flex: 1;
   background-color: inherit;
@@ -343,7 +336,8 @@
   transition: all 0.5s ease-out;
 }
 
-.portfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:active {
   background-position: right bottom;
   color: #070808;
   cursor: pointer;
@@ -354,8 +348,6 @@
 /* ********************************************** */
 .carousel {
   position: relative;
-  /* height: 45rem; */
-  margin: 0 auto;
   background: linear-gradient(135deg, #070808 20%, #0a0b0d);
   box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
@@ -442,8 +434,6 @@
 .section-contact {
   background: linear-gradient(45deg, #000 20%, #061611);
   padding: 12.8rem 0;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-text {
@@ -479,7 +469,7 @@
 }
 
 .info-icon {
-  color: #32c398;
+  color: #2dae87;
   font-size: 1.8rem;
 }
 
@@ -588,13 +578,13 @@
 .footer-contact-info a {
   display: block;
   text-decoration: none;
-  color: #4d5154;
+  color: #444;
 }
 
 .footer-info {
   margin-bottom: 2.4rem;
   font-size: 2rem;
-  color: #4d5154;
+  color: #444;
 }
 
 .logo-footer {
