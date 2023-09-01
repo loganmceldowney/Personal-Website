@@ -261,11 +261,18 @@
     display: none;
   }
 
+  .portfolio-img-box {
+    padding: 3.6rem;
+  }
   .portfolio-img-phone {
-    display: block;
+    box-sizing: border-box;
+    display: inline-block;
     overflow: hidden;
     width: 100%;
-    filter: brightness(75%);
+    filter: brightness(70%);
+    border-radius: 12px;
+    box-shadow: 0 0 0 2px rgba(56, 217, 169, 1),
+      6px 6px 0 0 rgba(56, 217, 169, 1);
   }
 
   .carousel__button {
