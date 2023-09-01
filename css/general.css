@@ -120,57 +120,41 @@ strong {
   font-weight: 600;
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  color: #38d9a9;
-  background-color: inherit;
-  border-radius: 4px;
-  border: 3px solid #38d9a9;
-  padding: 1.2rem 3.6rem;
-  box-shadow: 0 6px 12px rgba(56, 217, 169, 0.2);
-  background: linear-gradient(to left, #38d9a9 50%, transparent 50%);
-  background-size: 250% 150%;
-  background-position: left bottom;
-  transition: all 0.7s ease-out;
-}
-
-.btn:hover,
-.btn:active {
-  background-position: right bottom;
-  color: #070808;
-  cursor: pointer;
-}
-
 .container {
   padding: 0 3.2rem;
   max-width: 120rem;
   margin: 0 auto;
 }
 
-.btn-template {
+.btn-contact,
+.btn:link,
+.btn:visited {
   background-color: inherit;
   border: 2px solid #38d9a9;
+  text-decoration: none;
   color: #38d9a9;
   border-radius: 4px;
   /* color: #070808; */
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 0.8rem 1.6rem;
+  font-size: 2.2rem;
+  font-weight: 500;
   background: linear-gradient(to left, #38d9a9 50%, transparent 50%);
-  background-size: 200% 100%;
+  box-shadow: 0 3px 10px rgba(56, 217, 169, 0.2);
+  background-size: 250% 150%;
   background-position: left bottom;
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
 }
 
-.btn-template:hover {
+.btn:hover,
+.btn:active,
+.btn-contact:hover {
   background-position: right bottom;
   color: #070808;
   cursor: pointer;
+}
+
+.btn-contact {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.8rem;
 }
 
 .container-small {
