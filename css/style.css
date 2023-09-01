@@ -143,6 +143,22 @@
   height: 3.6rem;
 }
 
+.resume {
+  display: flex;
+  align-items: center;
+}
+
+.resume-icon {
+  padding-left: 0.8rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.resume-text {
+  display: inline-block;
+  font-weight: 400;
+}
+
 /* ********************************************** */
 /* ABOUT SECTION */
 /* ********************************************** */
@@ -374,7 +390,7 @@
   height: 4.8rem;
   width: 4.8rem;
   color: #070808;
-  background-color: #f1f3f5;
+  background-color: #38d9a9;
   border-radius: 50%;
 }
 
