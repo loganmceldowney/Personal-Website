@@ -130,14 +130,14 @@ strong {
 .btn:link,
 .btn:visited {
   background-color: inherit;
-  border: 2px solid #38d9a9;
+  border: 2px solid #2dae87;
   text-decoration: none;
-  color: #38d9a9;
+  color: #2dae87;
   border-radius: 4px;
   /* color: #070808; */
   font-size: 2.2rem;
   font-weight: 500;
-  background: linear-gradient(to left, #38d9a9 50%, transparent 50%);
+  background: linear-gradient(to left, #2dae87 50%, transparent 50%);
   box-shadow: 0 3px 10px rgba(56, 217, 169, 0.2);
   background-size: 250% 150%;
   background-position: left bottom;
