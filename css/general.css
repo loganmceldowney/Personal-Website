@@ -65,7 +65,7 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -74,6 +74,8 @@ body {
   font-weight: 400;
   color: #f1f3f5;
   overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #070808;
 }
 
 .header {
@@ -225,4 +227,13 @@ hr {
 }
 .portfolio-img-phone {
   display: none;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
 }
