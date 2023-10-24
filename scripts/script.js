@@ -79,3 +79,20 @@ btnNavEl.addEventListener("click", function () {
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+// Menu Fade Animation
+const handleHover = function (e, opacity) {
+  if (e.target.classList.contains("main-nav-link")) {
+    const link = e.target;
+    const siblings = link
+      .closest(".main-nav")
+      .querySelectorAll(".main-nav-link");
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+  }
+};
+
+const nav = document.querySelector(".main-nav");
+nav.addEventListener("mouseover", handleHover.bind(0.2));
+nav.addEventListener("mouseout", handleHover.bind(1));
