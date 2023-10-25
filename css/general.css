@@ -75,7 +75,7 @@ body {
   color: #f1f3f5;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #070808;
+  background: linear-gradient(135deg, #000 20%, #040e0b);
 }
 
 .header {
@@ -231,7 +231,6 @@ hr {
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
 }
 
 .section {
