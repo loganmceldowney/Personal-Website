@@ -135,15 +135,15 @@ strong {
   border: 2px solid #2dae87;
   text-decoration: none;
   color: #2dae87;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   /* color: #070808; */
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 600;
   background: linear-gradient(to left, #2dae87 50%, transparent 50%);
   box-shadow: 0 3px 10px rgba(56, 217, 169, 0.2);
   background-size: 250% 150%;
   background-position: left bottom;
-  transition: all 0.7s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .btn:hover,
