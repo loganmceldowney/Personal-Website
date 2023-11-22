@@ -313,6 +313,10 @@
   background-color: #fcc419;
 }
 
+.tag-ajax {
+  background-color: #51cf66;
+}
+
 .portfolio-links {
   display: flex;
   flex-direction: row;
