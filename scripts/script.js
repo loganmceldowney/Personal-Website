@@ -42,17 +42,51 @@ const revealSection = function (entries, observer) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section--hidden");
+  // Slide in ABOUT Section
+
+  if (entry.target.classList.contains("section-about")) {
+    const aboutImage = entry.target.children[0].children[0];
+    const aboutTextBox = entry.target.children[0].children[1];
+    aboutImage.classList.add("in-view");
+    aboutTextBox.classList.add("in-view");
+  }
+
+  // Slide in CTA Section
+  if (entry.target.classList.contains("section-cta")) {
+    const ctaContainer = entry.target.children[0];
+    console.log(ctaContainer);
+    ctaContainer.classList.add("in-view");
+    console.log(ctaContainer);
+  }
+
+  // Slide in Portfolio Section
+  if (entry.target.classList.contains("section-portfolio")) {
+    const portfolioHeading = entry.target.children[0].children[0];
+    const portfolioSubHeading = entry.target.children[0].children[1];
+    const portfolioCards = entry.target.children[0].children[2];
+    portfolioHeading.classList.add("in-view");
+    portfolioSubHeading.classList.add("in-view");
+    portfolioCards.classList.add("in-view");
+  }
+
+  // Slide in Contact Section
+  if (entry.target.classList.contains("section-contact")) {
+    const contactTextBox = entry.target.children[0].children[0].children[0];
+    const contactForm = entry.target.children[0].children[0].children[1];
+    console.log(contactTextBox, contactForm);
+    contactTextBox.classList.add("in-view");
+    contactForm.classList.add("in-view");
+  }
   observer.unobserve(entry.target);
 };
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.25,
 });
 
 allSections.forEach(function (section) {
-  section.classList.add("section--hidden");
+  // section.classList.add("section--hidden");
   sectionObserver.observe(section);
 });
 

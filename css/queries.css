@@ -101,6 +101,10 @@
   .contact-text {
     line-height: 1.6;
   }
+
+  .about-text-box {
+    transition-delay: 1000ms;
+  }
 }
 
 /*************************/
@@ -112,6 +116,14 @@
   }
   .container-small {
     max-width: 80rem;
+  }
+
+  .cta-container {
+    top: -50px;
+  }
+
+  .contact-form-box {
+    transition-delay: 1500ms;
   }
 
   .section-hero,

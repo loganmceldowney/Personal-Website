@@ -36,7 +36,9 @@
   border: none;
   background: none;
   cursor: pointer;
-
+  position: relative;
+  width: 3.6rem;
+  height: 3.6rem;
   display: none;
 }
 
@@ -139,6 +141,7 @@
 }
 
 .logo {
+  position: relative;
   width: 3.6rem;
   height: 3.6rem;
 }
@@ -164,12 +167,28 @@
   font-weight: 300;
 }
 
+.about-text-box {
+  opacity: 0;
+  position: relative;
+  left: 50%;
+  transition: all 0.8s;
+}
+
 .personal-image {
+  position: relative;
   border-radius: 12px;
   filter: brightness(75%);
   display: block;
   width: 100%;
   box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5 ease, transform 0.5 ease;
+}
+
+.personal-image-container {
+  position: relative;
+  opacity: 0;
+  left: -50%;
+  transition: all 0.8s;
 }
 
 .skills {
@@ -206,6 +225,13 @@
   font-size: 6.4rem;
   text-align: center;
   margin-bottom: 1.8rem;
+}
+
+.cta-container {
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: top 1s ease, opacity 1s ease;
 }
 
 .social-list {
@@ -254,6 +280,21 @@
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid #2dae87;
+}
+
+.portfolio-heading-el {
+  position: relative;
+  left: -50%;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
+}
+
+.portfolio-sub-heading-el {
+  position: relative;
+  left: -50%;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
+  transition-delay: 500ms;
 }
 
 .hr-different {
@@ -338,6 +379,10 @@
 /* ********************************************** */
 .carousel {
   position: relative;
+  left: 50%;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
+  transition-delay: 1000ms;
   background: linear-gradient(135deg, #070808 20%, #0a0b0d);
   box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
@@ -426,6 +471,13 @@
   padding: 12.8rem 0;
 }
 
+.contact-text-box {
+  position: relative;
+  left: -50%;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
+}
+
 .contact-text {
   margin-bottom: 4.8rem;
   color: #bbb;
@@ -464,7 +516,12 @@
 }
 
 .contact-form-box {
+  position: relative;
+  left: 50%;
+  opacity: 0;
+  transition: left 1s ease, opacity 1s ease;
   align-self: center;
+  transition-delay: 750ms;
   border-radius: 8px;
 }
 
@@ -567,4 +624,122 @@
 
 .footer-social-nav {
   margin-bottom: 3.2rem;
+}
+
+/* ********************************************** */
+/* ANIMATION */
+/* ********************************************** */
+
+.slide-in-element.in-view,
+.portfolio-heading-el.in-view,
+.portfolio-sub-heading-el.in-view,
+.carousel.in-view,
+.contact-text-box.in-view,
+.contact-form-box.in-view {
+  left: 0;
+  opacity: 1;
+}
+
+.cta-container.in-view {
+  top: 0;
+  opacity: 1;
+}
+
+.new-btn-a {
+  position: relative;
+  display: inline-block;
+  padding: 1.4rem 2.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #279876;
+  background-color: inherit;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 6px 0px inset,
+    rgba(0, 0, 0, 0.4) -3px -3px 6px 1px inset;
+  transition: 0.5s;
+}
+
+.new-btn-a:hover {
+  cursor: pointer;
+  color: #38d9a9;
+}
+
+.new-btn-a span {
+  display: block;
+  position: absolute;
+  background-color: #32c398;
+}
+
+.new-btn-a span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.35s;
+}
+
+.new-btn-a:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.35s;
+}
+
+.new-btn-a span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s;
+}
+
+.new-btn-a:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.35s;
+}
+
+.new-btn-a span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.35s;
+  transition-delay: 0.35s;
+}
+
+.new-btn-a:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.35s;
+  transition-delay: 0.35s;
+}
+
+.new-btn-a span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s;
+  transition-delay: 0.35s;
+}
+
+.new-btn-a:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.35s;
+  transition-delay: 0.35s;
+}
+
+.submit-button-new {
+  border: none;
+  font-size: 1.4rem;
 }
