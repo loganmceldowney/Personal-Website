@@ -105,7 +105,7 @@
   top: 0;
   right: 0;
   background-color: rgb(56, 217, 169);
-  height: 1.4rem;
+  height: 0.8rem;
   box-shadow: 0 14px 50px rgba(56, 217, 169, 0.2),
     0 10px 4cqb rgba(56, 217, 169, 0.15);
 }
@@ -113,7 +113,7 @@
 .hero-text-box::before {
   content: "";
   position: absolute;
-  width: 1.4rem;
+  width: 0.8rem;
   top: 0;
   right: 0;
   background-color: #38d9a9;
@@ -257,7 +257,7 @@
 
 .social-list a:hover,
 .social-list a:active {
-  color: #343a40;
+  color: #070808;
   transform: translateY(-1px);
 }
 
@@ -314,7 +314,7 @@
 
 .portfolio-heading {
   font-size: 4.4rem;
-  color: #32c398;
+  color: #38d9a9;
   margin-bottom: 1.2rem;
 }
 
@@ -328,16 +328,16 @@
 }
 
 .tag {
-  display: inline-block;
-  padding: 0.4rem 1.4rem;
-  font-size: 1.6rem;
+  padding: 0.4rem 1.4rem 0.2rem 1.4rem;
+  font-size: 1.4rem;
   color: #070808;
-  border-radius: 100px;
+  border-radius: 8px;
   font-weight: 600;
 }
 
 .tags {
   display: flex;
+  align-items: center;
   gap: 0.6rem;
   margin-bottom: 1.2rem;
 }
@@ -409,15 +409,22 @@
   height: 4.8rem;
   width: 4.8rem;
   color: #070808;
-  background-color: #2dae87;
+  background-color: #279876;
   border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.arrow-icon:hover {
+  background-color: #38d9a9;
+  transform: translateY(-1px);
 }
 
 .carousel__button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   background: none;
   z-index: 1;
@@ -586,12 +593,18 @@
   gap: 4.8rem;
   display: flex;
   margin-bottom: 2.4rem;
+  scroll-behavior: smooth;
 }
 
 .footer-nav-list li a {
   text-decoration: none;
   font-size: 2rem;
   color: #444;
+  transition: all 0.3s;
+}
+
+.footer-nav-list li a:hover {
+  color: #070808;
 }
 
 .copyright {
@@ -610,7 +623,6 @@
 .footer-info {
   margin-bottom: 2.4rem;
   font-size: 2rem;
-  color: #444;
 }
 
 .logo-footer {
